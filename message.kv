@@ -1,0 +1,41 @@
+<chatting>:
+    MDBoxLayout:
+        
+        
+
+        MDScreen:
+            MDBoxLayout:
+                    
+                orientation:'vertical'
+                size_hint:None,None
+                width:100
+                height:100
+                spacing :25
+                pos_hint:{'center_x':0.5,'center_y':0.5}
+                padding:[30,30,30,30]
+                
+                MDBoxLayout:
+                    size_hint:None,None
+                    pos_hint:{'center_x':0.5,'center_y':0.5}
+                    orientation:'vertical'
+                    size: 400,200
+                    Image:
+                        source:r"C:\Users\Hassam\Desktop\backup2023\myvenv\logo.png"
+
+               
+                   
+        
+            MDNavigationLayout:
+
+            MDScreenManager:
+
+                MDScreen:
+                    id:label_scr
+
+                    MDTopAppBar:
+                        title: "ITX-SOLUTION"
+                        elevation: 4
+                        pos_hint: {"top": 1}
+                        md_bg_color: "#050b78"
+                        specific_text_color: "#ffffff"
+                        left_action_items: [["dots-vertical", lambda x: nav_drawer.set_state("open")]]
